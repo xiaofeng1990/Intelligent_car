@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\core;..\project;..\stm32f1x_fwlib\inc;..\system\delay;..\system\sys;..\system\usart;..\hardware\led;..\hardware\pwm;..\hardware\motor</IncludePath>
+              <IncludePath>..\core;..\project;..\stm32f1x_fwlib\inc;..\system\delay;..\system\sys;..\system\usart;..\hardware\led;..\hardware\pwm;..\hardware\motor;..\hardware\Servo</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -481,6 +481,11 @@
               <FileName>motor.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\hardware\motor\motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\Servo\servo.c</FilePath>
             </File>
           </Files>
         </Group>

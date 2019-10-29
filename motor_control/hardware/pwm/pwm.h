@@ -8,6 +8,6 @@ void pwm_set_duty_c2(uint16_t duty);
 void pwm_set_duty_c3(uint16_t duty);
 void pwm_set_duty_c4(uint16_t duty);
 void pwm_set_duty_all(uint16_t duty);
-
+void pwm_tim2_init(uint16_t arr,uint16_t psc);
 #endif
 
