@@ -3,7 +3,7 @@
 #define _MOTOR_H_
 #include "stm32f10x.h"
 
-#define	SPEED_MAX	5999
+#define	SPEED_MAX	899
 
 /********* left motor *********/
 //control pin PB12/13

@@ -11,11 +11,13 @@ int main(void)
 	uart1_init(115200);
 	led_init();
 	motor_init();
+	motor_set_speeds(600);
+	motor_forward();
 	while(1)
 	{
 		set_led_on(LED1);
-		delay_ms(100);
+		delay_ms(500);
 		set_led_off(LED1);
-		delay_ms(100);
+		delay_ms(500);
 	}
 }

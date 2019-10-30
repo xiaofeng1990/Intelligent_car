@@ -7,13 +7,13 @@ void motor_init(void)
 	//gpio init
 	gpio_init();
 	//pwm init
-	pwm_init((uint16_t)SPEED_MAX, 0);
+	pwm_init((uint16_t)SPEED_MAX, 7);	//12KHz
 }
 
 //set left speed
 void motor_set_speed_left(uint16_t speed)
 {
-	if(speed < 0)
+	if(speed <= 0)
 		speed = 0;
 	if(speed > SPEED_MAX)
 		speed = SPEED_MAX;
@@ -33,7 +33,7 @@ void motor_set_speed_right(uint16_t speed)
 
 void motor_set_speeds(uint16_t speed)
 {
-	if(speed < 0)
+	if(speed <= 0)
 		speed = 0;
 	if(speed > SPEED_MAX)
 		speed = SPEED_MAX;
@@ -78,3 +78,4 @@ void gpio_init(void)
 
 
 //≤‚ÀŸ
+
